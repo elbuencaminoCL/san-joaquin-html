@@ -4,12 +4,13 @@
 	<title>Colegio</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-	<link href='https://fonts.googleapis.com/css?family=Exo:100,200,300,400,500,600,700,800,900' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Exo:400,700,300' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Lato:400,700,300' rel='stylesheet' type='text/css'>
-	<link href="css/bootstrap.css" rel="stylesheet" media="screen">
-	
+
+	<link href="css/bootstrap.css" rel="stylesheet" media="screen">	
 	<link href="css/cthiers.css" rel="stylesheet" media="screen">
 	<link href="css/main.css" rel="stylesheet" media="screen">
+	<link href="css/header.css" rel="stylesheet" media="screen">
 
 	<script src="js/jquery-1.10.2.js"></script>
 	<script src="js/jquery-ui.min.js"></script>
@@ -23,62 +24,71 @@
 
 <body class="home" id="departamento">
 	<div class="wrapper">
-		<!--header-->
+		<!--Header-Nuevo-->
 		<header id="header" class="header clearfix">
+			<!--<div class="main-image">
+				<img src="http://placehold.it/1440x1080">
+			</div>
+			<img src="imag/main/main_home.png" alt="Home" class="img-responsive main-image shadow" />-->
 
+			<!-- MENU SUPERIOR -->
 			<nav id="top-menu" class="navbar navbar-default" role="navigation">
 				<div class="container">
 					<div class="row">
-				<!-- Brand and toggle get grouped for better mobile display 
-						<div class="navbar-header">
-							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-								<span class="sr-only">Toggle navigation</span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-							</button>
-						</div>-->
 
-				<!-- Collect the nav links, forms, and other content for toggling -->
 						<div class="collapse navbar-collapse colapsables">
 							<ul class="nav navbar-nav navbar-right">
 								<li><a href="#">Video Institucional</a></li>
 								<li><a href="galerias.html">Galería</a></li>
 								<li><a href="#">Servicio Casino</a></li>
-								<li><a href="#"><img src="img/iconos/ico-facebook.png"></a></li>
-								<li><a href="#"><img src="img/iconos/ico-twitter.png"></a></li>
-								<li><a href="#">ES</a></li>
+								<li><a class="fb" href="#"><img src="img/iconos/ico-facebook.png"></a></li>
+								<li><a class="tt" href="#"><img src="img/iconos/ico-twitter.png"></a></li>
+
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ES<span class="glyphicon glyphicon-menu-down"></span></a>
+						            <ul class="dropdown-menu">
+						                <li><a href="#">ESPAÑOL</a></li>
+						                <li><a href="#">ENGLISH</a></li>
+						                <li><a href="#">SUECO</a></li>
+						            </ul>
+								</li>
 							</ul>
-						</div><!-- /.navbar-collapse -->
+						</div>
+
 					</div>
 				</div>
-			</nav>
+			</nav><!-- /FIN DE MENU SUPERIOR -->
 
+			<!-- MENU PRINCIPAL -->
 			<nav id="menu-principal" class="navbar navbar-default" role="navigation">
 				<div class="container">
-					<div class="row">
-			  <!-- Brand and toggle get grouped for better mobile display -->
-						<div id="hexagon" class="navbar-header">
+					<div class="row clearfix">
+
+						<div class="nav-toggler-movil">
+
+							<div id="hexagon" class="navbar-header">
+								<a class="navbar-brand" href="index.html"><img src="img/logo.png"></a>
+							</div>
+
 							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".colapsables">
 								<span class="sr-only">Toggle navigation</span>
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
-							</button>
-							<a class="navbar-brand" href="index.html"><img src="img/logo.png"></a>
-							
-						</div>
+							</button>	
 
-			  <!-- Collect the nav links, forms, and other content for toggling -->
+						</div>					
+
 						<div class="collapse navbar-collapse colapsables">
 							
-						    <ul class="nav navbar-nav navbar-right">
+						    <ul class="nav navbar-nav"><!-- ELEMENTOS MENU -->
+
 								<li class="dropdown">
-						            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Nuestro colegio <span class="caret"></span></a>
+						            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Nuestro colegio<span class="glyphicon glyphicon-menu-down"></span></a>
 						            <ul class="dropdown-menu">
 						                <li><a href="#">Proyecto Educativo</a></li>
 						                <li><a href="departamento.html">Bilingüismo</a></li>
-						                <li><a href="#">Infraestructura</a></li>
+						                <li><a href="infraestructura.html">Infraestructura</a></li>
 						                <li><a href="#">Equipo Directivo</a></li>
 						                <li><a href="#">Equipo Docente</a></li>
 						             	<li><a href="noticias.html">Noticias</a></li>
@@ -86,7 +96,7 @@
 						        </li>
 
 						        <li class="dropdown">
-						            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ciclos <span class="caret"></span></a>
+						            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ciclos<span class="glyphicon glyphicon-menu-down"></span></a>
 						            <ul class="dropdown-menu">
 						            	<li><a href="ciclos.html">Ir a Ciclos</a></li>
 						                <li><a href="#">Infant School</a></li>
@@ -99,7 +109,7 @@
 						        <li><a href="talleres.html">Extra Programaticas</a></li>
 
 						        <li class="dropdown">
-						            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Apoderados <span class="caret"></span></a>
+						            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Apoderados<span class="glyphicon glyphicon-menu-down"></span></a>
 						            <ul class="dropdown-menu">
 						                <li><a href="#">Uniforme</a></li>
 						                <li><a href="#">Lista de Útiles</a></li>
@@ -110,10 +120,10 @@
 						        	</ul>
 						        </li>
 	
-					            <li><a href="#">Calendario</a></li>
+					            <li><a href="calendario.html">Calendario</a></li>
 					            
 								<li class="dropdown">
-						            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Admisión <span class="caret"></span></a>
+						            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Admisión<span class="glyphicon glyphicon-menu-down"></span></a>
 						            <ul class="dropdown-menu">
 						            	<li><a href="admision.html">Ir a Admisión</a></li>
 						                <li><a href="#">Requisitos</a></li>
@@ -123,25 +133,27 @@
 						        	</ul>
 						        </li>
 
-					            <li><a href="#">Contacto</a></li>
-						    </ul>
+					            <li><a href="contacto.html">Contacto</a></li>
 
-						</div><!-- /.navbar-collapse -->
-					</div>
-				</div>
-			</nav>
-			<!-- /Navs General -->
+						    </ul><!-- FIN ELEMENTOS MENU -->
 
+						</div>
+					</div><!-- ROW -->
+				</div><!-- CONTAINER -->
+			</nav><!-- /FIN MENU PRINCIPAL -->
+			
 		</header>
 		<!--/header-->
 
 		<!--main-->
 		<div id="main" class="clearfix">
-			<div id="foto-encabezado" class="absolute">
-				<img class="img-responsive" src="img/slider.jpg">
-			</div>
 
-			<h2 class="titulo-seccion center relative"><span>PROYECTO EDUCATIVO</span></h2>
+			<!--NUEVO CON ICONO-ENCABEZADO CON IMAGEN Y TÍTULO-->
+			<div id="foto-encabezado" class="absolute">
+				<img src="img/01.jpg">
+			</div>
+			<h2 class="titulo-seccion center relative"><span><img src="img/iconos/noticias.svg">PROYECTO EDUCATIVO</span></h2>
+			<!--/FIN ENCABEZADO CON IMAGEN Y TÍTULO-->
 
 			<div id="proyecto-educativo" class="container relative">
 				

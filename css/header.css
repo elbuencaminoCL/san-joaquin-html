@@ -123,6 +123,10 @@ body {
     color: #2fb1be;
     transition: all 0.5s;
 }
+#header #menu-principal ul li a:focus{
+	color: #fff;
+	background-color: #30B1BE;
+}
 #header #menu-principal ul li a span{
 	color: #116450;
 	margin-left: 5px;
@@ -185,7 +189,7 @@ body {
 		width: auto;
 	}
 	#header{
-		background: #1A3861
+		background: #116450;
 	}
 	#header #top-menu{
 		margin: 20px 0px 0px 0px;
@@ -212,14 +216,14 @@ body {
 		padding: 14px 0px;
 	}
 	#header #menu-principal ul li a:hover{
-		background: #1A3861;
+		background: #116450;
 		border: 0px;
 		color: #FFF;
 	}
 	#header #top-menu ul li a:hover{
-		background: #FFF;
+		background: #083F32;
 		border: 0px;
-		color: #1A3861;		
+		color: #fff;		
 	}
 	#header #menu-principal ul li a .dropper{
 		display: none;
@@ -232,7 +236,7 @@ body {
 		border: 0px;
 	}
 	#header .navbar-default .navbar-toggle .icon-bar{
-		background: #1A3861;
+		background: #30B1BE;
 	}
 	#header .fb:hover{
 		background: #3b5998;
@@ -250,7 +254,7 @@ body {
 	    content: " ";
 	}
 	#header .open a.dropdown-toggle{
-		background: #7F1821;
+		background: #30B1BE;
 		color: #FFF;
 	}
 	#header .navbar-nav .open .dropdown-menu{
